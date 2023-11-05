@@ -1,0 +1,47 @@
+@use '../variables.scss';
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h2 {
+        color: white;
+        text-align: center;
+        margin: 10px 0 35px 0;
+    }
+
+    .animes-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+    }
+
+    .load-more-button {
+        display: block;
+        width: 80%;
+        margin: 20px auto;
+        padding: .7em 0em;
+        background-color: variables.$color-contrast; /* Cor de fundo do botão */
+        border: 2px solid variables.$color-contrast;
+        color: #111; 
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      .load-more-button:hover {
+        background-color: transparent;
+        color: variables.$color-contrast; /* Cor de fundo do botão ao passar o mouse */
+      }
+}
+
+@media (max-width: 479px) {
+  .container .animes-container {
+    justify-content: center;
+  }
+}

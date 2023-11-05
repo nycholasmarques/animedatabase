@@ -1,0 +1,19 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h2 {
+        color: white;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .anime-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+    }
+}
